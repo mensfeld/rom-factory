@@ -165,18 +165,18 @@ RSpec.describe ROM::Factory do
           end
 
           conf.relation(:basic_users) do
-            schema(infer: true) do
-              associations do
-                has_one :basic_account
-              end
+            schema(infer: true)
+
+            associations do
+              has_one :basic_account
             end
           end
 
           conf.relation(:basic_accounts) do
-            schema(infer: true) do
-              associations do
-                belongs_to :basic_user
-              end
+            schema(infer: true)
+
+            associations do
+              belongs_to :basic_user
             end
           end
         end
@@ -1194,10 +1194,10 @@ RSpec.describe ROM::Factory do
           attribute :title, ROM::SQL::Types::String.meta(
             read: ROM::SQL::Types::String.constructor(&:upcase)
           )
+        end
 
-          associations do
-            belongs_to :user
-          end
+        associations do
+          belongs_to :user
         end
       end
     end
