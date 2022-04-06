@@ -32,5 +32,5 @@ Gem::Specification.new do |spec|
   spec.add_dependency "dry-configurable", "~> 0.7"
   spec.add_dependency "dry-core", "~> 0.4"
   spec.add_dependency 'faker', '>= 1.7', '< 3.0'
-  spec.add_dependency 'rom-core', '~> 5.0'
+  spec.add_dependency 'rom', '~> 6.0'
 end
