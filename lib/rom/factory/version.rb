@@ -2,6 +2,6 @@
 
 module ROM
   module Factory
-    VERSION = '0.10.2'
+    VERSION = '1.0.0.alpha1'
   end
 end
