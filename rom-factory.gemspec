@@ -29,8 +29,8 @@ Gem::Specification.new do |spec|
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
 
-  spec.add_dependency "dry-configurable", "~> 0.7"
-  spec.add_dependency "dry-core", "~> 0.4"
+  spec.add_dependency "dry-configurable", "~> 0.14"
+  spec.add_dependency "dry-core", "~> 0.7"
   spec.add_dependency 'faker', '>= 1.7', '< 3.0'
-  spec.add_dependency 'rom', '~> 6.0'
+  spec.add_dependency 'rom', '~> 6.0.0.alpha1'
 end
