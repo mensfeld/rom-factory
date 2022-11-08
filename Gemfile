@@ -13,6 +13,7 @@ gem 'rspec', '~> 3.0'
 group :test do
   gem 'rom', github: 'rom-rb/rom', branch: 'main'
   gem 'rom-sql', github: 'rom-rb/rom-sql', branch: 'main'
+  gem 'dry-transformer', github: 'dry-rb/dry-transformer', branch: 'main'
   gem 'pry-byebug', '~> 3.8', platforms: :ruby
   gem 'pry', '~> 0.12.0', '<= 0.13'
 
